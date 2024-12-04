@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    grid-template-areas: "header header"
+    "aside main"
+    "footer footer";
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+    text-align: center;
+
+}
+header{
+    grid-area: header;
+    background-color: beige;
+}
+nav{
+    grid-area: navbar;
+    background-color: aqua;
+}
+aside{
+    grid-area: aside;
+    background-color: aquamarine;
+
+}
+main{
+    grid-area: main;
+    background-color: blue;
+}
+footer{
+    height: 50px;
+    grid-area: footer;
+    background-color: brown;
+}
+
+.titulo_aside{
+    display: flex;
+  margin-top: 10px;
+    list-style-type: none;
+    text-align: left;
+    border: 1px solid red;
+    padding-left: 30px;
+  
+ 
+}
+aside ul{
+    display: flex;
+   margin-top: 10px;
+    list-style-type: none;
+    text-align: left;
+    border: 1px solid red;
+    padding-left: 30px;
+
+}
+.productos{
+    display: grid;
+    min-height: 100vh;
+ justify-content: center;
+ align-items: center;
+    grid-template-columns:1fr 1fr 1fr;
+  
+    
+
+}
+.productos-item img{
+    width: 200px;
+    height:auto;
+}
